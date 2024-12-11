@@ -1,20 +1,22 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row style="text-align: center;">
       <v-col cols="12">
         <h1>目前事項 {{ currentText }}</h1>
       </v-col>
       <v-col cols="12">
-        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="white"></digit>
+        <digit v-for="(data, i) in currentTime" :key="i" :data="data" color="yellow"></digit>
       </v-col>
       <v-col cols="12">
         <v-btn
-icon="mdi-play"
+        icon="mdi-play"
+        color="red"
+        style="margin-right: 10px;"
         :disabled="status === STATUS.COUNTING || (current.length === 0 && items.length === 0)"
         @click="startTimer"
         ></v-btn>
-        <v-btn icon="mdi-pause" :disabled="status !== STATUS.COUNTING" @click="pauseTimer"></v-btn>
-        <v-btn icon="mdi-skip-next" :disabled="current.length === 0" @click="finishTimer"></v-btn>
+        <v-btn icon="mdi-pause" color="green" style="margin-right: 10px;" :disabled="status !== STATUS.COUNTING" @click="pauseTimer"></v-btn>
+        <v-btn icon="mdi-skip-next" color="blue" :disabled="current.length === 0" @click="finishTimer"></v-btn>
       </v-col>
     </v-row>
   </v-container>

@@ -1,7 +1,7 @@
 <template>
   <v-app >
-    <v-app-bar >
-      <v-container class="d-flex align-center" >
+    <v-app-bar>
+      <v-container class="d-flex align-center" style="color: greenyellow;">
         <v-app-bar-title>番茄鐘</v-app-bar-title>
         <v-btn prepend-icon="mdi-home" to="/">首頁</v-btn>
         <v-btn prepend-icon="mdi-format-list-bulleted" to="/list">事項</v-btn>

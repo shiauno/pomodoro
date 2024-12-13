@@ -8,7 +8,7 @@
         <v-btn prepend-icon="mdi-cog" to="settings">設定</v-btn>
       </v-container>
     </v-app-bar>
-    <v-main style="background: url(../bg.jpg);">
+    <v-main style="background: url(../public/bg.jpg);">
       <!-- slot = 插槽 = 自訂元件內的某部分 HTML
       v-slot = " 元件插槽提供的可用變數"
       Component = 目前路由應該顯示的元件 -->

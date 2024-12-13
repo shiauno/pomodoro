@@ -6,12 +6,12 @@
       </v-col>
       <v-col cols="12">
         <v-text-field
-          ref="inputTextField"
-          v-model="input"
+          ref="inputTextField" v-model="input"
           append-icon="mdi-plus"
           label="新增事項"
           clearable
           :rules="[rules.required, rules.length]"
+          style="backdrop-filter: blur(5px);"
           @keydown.enter="onInputSubmit"
           @click:append="onInputSubmit"
         ></v-text-field>
